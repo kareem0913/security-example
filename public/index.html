@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OAuth Google Sign-In Example</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Custom styles */
+      .jumbotron {
+        background-image: url("https://via.placeholder.com/800x400"); /* Placeholder image URL */
+        background-size: cover;
+        color: rgb(93, 111, 138);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>Welcome to our Website</h1>
+      <p class="lead">
+        This is a simple example of integrating social sign-in with OAuth
+        Google.
+      </p>
+    </div>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Show Profile</h5>
+              <p class="card-text">View your profile details.</p>
+              <a href="/profile" class="btn btn-primary btn-block"
+                >Show Profile</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Login with Google</h5>
+              <p class="card-text">Login using your Google account.</p>
+              <a href="/auth/google" class="btn btn-success btn-block"
+                >Login with Google</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Logout</h5>
+              <p class="card-text">Logout from your account.</p>
+              <a href="/auth/logout" class="btn btn-danger btn-block">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
